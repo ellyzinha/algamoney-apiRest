@@ -1,3 +1,4 @@
+
 package com.example.algamoney.api.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Autowired
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
-
         auth.inMemoryAuthentication()
                 .withUser("admin").password("admin").roles("ROLE");
     }
@@ -30,11 +30,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable();
-
     }
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
         resources.stateless(true);
     }
+
 }
