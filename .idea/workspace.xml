@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d73f9c09-68ce-47dc-ac7e-65d0163f57aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/TokenResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/CategoriaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/CategoriaResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/config/AuthorizationServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/config/AuthorizationServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/LancamentoResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/LancamentoResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/PessoaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/algamoney/api/resource/PessoaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/config/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/config/ResourceServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/resource/LancamentoResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/resource/LancamentoResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/resource/PessoaResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/algamoney/api/resource/PessoaResource.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +136,8 @@
       <workItem from="1579613711248" duration="19104000" />
       <workItem from="1579693462190" duration="330000" />
       <workItem from="1580253537098" duration="638000" />
-      <workItem from="1580847016536" duration="3514000" />
+      <workItem from="1580847016536" duration="3754000" />
+      <workItem from="1580858480192" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="criação da classe Categoria, repositório e RestController com o get da listagem.">
       <created>1577571420393</created>
@@ -262,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579649387556</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="adicionando o authorization de roles e scope em categoria">
+      <created>1580851334196</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1580851334196</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +310,8 @@
     <MESSAGE value="impl do JWT, RefreshTokenPostProcessor, RefreshTokenCookiePreProcessorFilter." />
     <MESSAGE value="impl do CorsFilter" />
     <MESSAGE value="add usuario e permissao ao banco, migração 04" />
-    <option name="LAST_COMMIT_MESSAGE" value="add usuario e permissao ao banco, migração 04" />
+    <MESSAGE value="adicionando o authorization de roles e scope em categoria" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionando o authorization de roles e scope em categoria" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="677" key="#SQL_Dialects" timestamp="1578580283020">
@@ -346,63 +357,71 @@
     </state>
     <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1578969973605" />
     <state x="771" y="310" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1578580259582" />
-    <state width="1807" height="363" key="GridCell.Tab.0.bottom" timestamp="1580851255281">
+    <state width="1807" height="363" key="GridCell.Tab.0.bottom" timestamp="1580863991969">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538684" />
+    <state width="1807" height="363" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991969" />
     <state width="1807" height="363" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255281" />
     <state width="1807" height="363" key="GridCell.Tab.0.bottom/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961206" />
-    <state width="1807" height="363" key="GridCell.Tab.0.center" timestamp="1580851255280">
+    <state width="1807" height="363" key="GridCell.Tab.0.center" timestamp="1580863991969">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538684" />
+    <state width="1807" height="363" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991969" />
     <state width="1807" height="363" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255280" />
     <state width="1807" height="363" key="GridCell.Tab.0.center/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961206" />
-    <state width="1807" height="363" key="GridCell.Tab.0.left" timestamp="1580851255279">
+    <state width="1807" height="363" key="GridCell.Tab.0.left" timestamp="1580863991968">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538683" />
+    <state width="1807" height="363" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991968" />
     <state width="1807" height="363" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255279" />
     <state width="1807" height="363" key="GridCell.Tab.0.left/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961205" />
-    <state width="1807" height="363" key="GridCell.Tab.0.right" timestamp="1580851255281">
+    <state width="1807" height="363" key="GridCell.Tab.0.right" timestamp="1580863991969">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538684" />
+    <state width="1807" height="363" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991969" />
     <state width="1807" height="363" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255281" />
     <state width="1807" height="363" key="GridCell.Tab.0.right/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961206" />
-    <state width="1807" height="363" key="GridCell.Tab.1.bottom" timestamp="1580851255286">
+    <state width="1807" height="363" key="GridCell.Tab.1.bottom" timestamp="1580863991970">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538685" />
+    <state width="1807" height="363" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991970" />
     <state width="1807" height="363" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255286" />
     <state width="1807" height="363" key="GridCell.Tab.1.bottom/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961207" />
-    <state width="1807" height="363" key="GridCell.Tab.1.center" timestamp="1580851255283">
+    <state width="1807" height="363" key="GridCell.Tab.1.center" timestamp="1580863991969">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538684" />
+    <state width="1807" height="363" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991969" />
     <state width="1807" height="363" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255283" />
     <state width="1807" height="363" key="GridCell.Tab.1.center/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961206" />
-    <state width="1807" height="363" key="GridCell.Tab.1.left" timestamp="1580851255282">
+    <state width="1807" height="363" key="GridCell.Tab.1.left" timestamp="1580863991969">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538684" />
+    <state width="1807" height="363" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991969" />
     <state width="1807" height="363" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255282" />
     <state width="1807" height="363" key="GridCell.Tab.1.left/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961206" />
-    <state width="1807" height="363" key="GridCell.Tab.1.right" timestamp="1580851255285">
+    <state width="1807" height="363" key="GridCell.Tab.1.right" timestamp="1580863991969">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="278" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579271538685" />
+    <state width="1807" height="363" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580863991969" />
     <state width="1807" height="363" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580851255285" />
     <state width="1807" height="363" key="GridCell.Tab.1.right/67.27.3213.1053@67.27.3213.1053" timestamp="1579649961206" />
     <state x="476" y="130" width="1024" height="845" key="SettingsEditor" timestamp="1578970520553">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1578970520553" />
-    <state x="532" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579649398765">
-      <screen x="67" y="27" width="3213" height="1053" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580851345512">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1360.768@67.27.1853.1053" timestamp="1579269649939" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1579537146969" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1580851345512" />
     <state x="532" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.3213.1053@67.27.3213.1053" timestamp="1579649398765" />
     <state x="726" y="307" width="524" height="491" key="extract.method.dialog" timestamp="1578575444555">
       <screen x="67" y="27" width="1853" height="1053" />
