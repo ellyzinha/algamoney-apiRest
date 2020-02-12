@@ -17,6 +17,8 @@ import org.springframework.stereotype.Service;
 import com.example.algamoney.api.model.Usuario;
 import com.example.algamoney.api.repository.UsuarioRepository;
 
+//Faz a autorização no banco de dados
+
 @Service
 public class AppUserDetailsService implements UserDetailsService {
 
